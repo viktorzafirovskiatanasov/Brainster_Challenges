@@ -1,0 +1,1 @@
+@extends('challenge.home-template')

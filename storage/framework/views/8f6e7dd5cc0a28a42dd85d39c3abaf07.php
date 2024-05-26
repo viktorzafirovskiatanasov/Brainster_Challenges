@@ -1,0 +1,2 @@
+
+<?php echo $__env->make('challenge.home-template', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\User\Desktop\challenge\resources\views/challenge/home.blade.php ENDPATH**/ ?>

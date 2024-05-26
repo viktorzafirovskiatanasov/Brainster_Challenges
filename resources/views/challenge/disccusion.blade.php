@@ -1,0 +1,1 @@
+@extends('challenge.disccusion-template')

@@ -1,0 +1,2 @@
+
+<?php echo $__env->make('challenge.disccusion-template', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\User\Desktop\challenge\resources\views/challenge/disccusion.blade.php ENDPATH**/ ?>
