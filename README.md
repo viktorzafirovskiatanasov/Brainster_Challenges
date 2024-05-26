@@ -1,42 +1,66 @@
-# Introduction
-This repository showcases my journey and proficiency in various web development technologies and programming languages. Below is a comprehensive list of all the languages and frameworks I have learned, along with a brief description of each.
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-# Technologies and Languages
-HTML (HyperText Markup Language)
-HTML is the standard markup language for creating web pages and web applications. It structures the content on the web by defining elements such as headings, paragraphs, images, and links.
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-# CSS (Cascading Style Sheets)
-CSS is used to style and layout web pages. It controls the look and feel of the web pages, allowing for the application of various styles such as colors, fonts, and spacing.
+## About Laravel
 
-# Sass (Syntactically Awesome Stylesheets)
-Sass is a CSS preprocessor that adds power and elegance to the basic language. It allows for the use of variables, nested rules, mixins, and more, making CSS more maintainable and extendable.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-# Git
-Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It allows multiple developers to work on a project simultaneously without overwriting each other's changes.
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-# Bootstrap
-Bootstrap is a popular front-end framework for developing responsive and mobile-first websites. It includes pre-designed components, such as buttons and forms, and a grid system that simplifies the process of creating layouts.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-# Tailwind CSS
-Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom designs. Unlike traditional CSS frameworks, it doesn't come with pre-styled components but allows for rapid styling using utility classes.
+## Learning Laravel
 
-# SQL (Structured Query Language)
-SQL is a standard language for accessing and manipulating databases. It is used to retrieve, update, insert, and delete data within a relational database management system.
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-# PHP (Hypertext Preprocessor)
-PHP is a popular general-purpose scripting language especially suited to web development. It is fast, flexible, and pragmatic, powering everything from blogs to the most popular websites in the world.
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-# JavaScript
-JavaScript is a high-level, interpreted scripting language that enables interactive web pages. It is a core technology of the World Wide Web, alongside HTML and CSS, and is used to enhance user experience by providing dynamic content.
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-# jQuery
-jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, and animation much simpler with an easy-to-use API that works across a multitude of browsers.
+## Laravel Sponsors
 
-# AJAX (Asynchronous JavaScript and XML)
-AJAX is a set of web development techniques using many web technologies on the client side to create asynchronous web applications. With AJAX, web applications can send and retrieve data from a server asynchronously without interfering with the display and behavior of the existing page.
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-# Laravel
-Laravel is a PHP framework for web artisans. It provides an elegant syntax and aims to make the development process a pleasing one for the developer without sacrificing application functionality. Common tasks such as routing, authentication, and caching are made easier with Laravel.
+### Premium Partners
 
-Conclusion
-Each of these languages and frameworks plays a crucial role in modern web development. By mastering these technologies, I am equipped to build robust, efficient, and aesthetically pleasing web applications. This repository will serve as a testament to my skills and experience in these areas. Feel free to explore the code and reach out if you have any questions or suggestions.
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
