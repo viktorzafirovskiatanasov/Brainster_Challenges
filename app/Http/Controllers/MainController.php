@@ -87,46 +87,46 @@ class MainController extends Controller
     
 
     public function employment(Request $request)
-    {
-        $validatedData = $request->validate([
-            'email' => 'required|email',
-            'phone' => 'required',
-            'company' => 'required',
-        ]);
-    
-        $companyData = [
-            'email' => $validatedData['email'],
-            'phone' => $validatedData['phone'],
-            'company' => $validatedData['company'],
-        ];
-    
-        $response = Http::withHeaders([
-            'Authorization' => 'Bearer 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',
-        ])->post('https://api.sendgrid.com/v3/mail/send', [
-            'personalizations' => [
-                [
-                    'to' => [
-                        ['email' => $companyData['email']],
-                    ],
-                    'subject' => 'Responding to your interest to our students',
-                ],
-            ],
-            'from' => [
-                'email' => 'viktorzafirovski3@gmail.com',
-                'name' => 'Brainster',
-            ],
-            'content' => [
-                [
-                    'type' => 'text/plain',
-                    'value' => 'we will be contacting you with futher oportunities and potential students that are suitable for your company',
-                ],
-            ],
-        ]);
-        
-        return redirect()->back()->with('success', 'Email sent successfully');
-    }
-    
+{
+    $validatedData = $request->validate([
+        'email' => 'required|email',
+        'phone' => 'required',
+        'company' => 'required',
+    ]);
 
+    $companyData = [
+        'email' => $validatedData['email'],
+        'phone' => $validatedData['phone'],
+        'company' => $validatedData['company'],
+    ];
+
+    $sendGridApiKey = getenv('SENDGRID_API_KEY');
+
+    $response = Http::withHeaders([
+        'Authorization' => 'Bearer ' . $sendGridApiKey,
+    ])->post('https://api.sendgrid.com/v3/mail/send', [
+        'personalizations' => [
+            [
+                'to' => [
+                    ['email' => $companyData['email']],
+                ],
+                'subject' => 'Responding to your interest to our students',
+            ],
+        ],
+        'from' => [
+            'email' => 'viktorzafirovski3@gmail.com',
+            'name' => 'Brainster',
+        ],
+        'content' => [
+            [
+                'type' => 'text/plain',
+                'value' => 'We will be contacting you with further opportunities and potential students that are suitable for your company',
+            ],
+        ],
+    ]);
+
+    return redirect()->back()->with('success', 'Email sent successfully');
+}
 
 
 }
