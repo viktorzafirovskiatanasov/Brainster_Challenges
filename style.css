@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgba(99, 140, 170, 255);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul {
+    margin-top: 0;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  div p {
+    margin: 0;
+  }
+  .pictureColor {
+    background-color: rgba(183, 206, 214, 255);
+  }
+  .colorGroup1 {
+    background-color: rgba(154, 167, 184, 255);
+  }
+  .colorGroup2 {
+    background-color: rgba(188, 185, 170, 255);
+  }
+  .colorGroup3 {
+    background-color: rgba(156, 224, 209, 255);
+  }
+  .colorGroup4 {
+    background-color: rgba(240, 158, 132, 255);
+  }
+  .colorGroup5 {
+    background-color: rgba(219, 219, 219, 255);
+  }
+  .headerNavigation {
+    max-width: 95%;
+  }
+  .headerNavigation a {
+    float: right;
+    margin-right: 20px;
+    color: white;
+    font-size: 10px;
+    padding-top: 10px;
+  }
+  .headerNavigation a:hover {
+    color: rgb(153, 153, 9);
+    text-decoration: underline red;
+  }
+  .headerNavigation img {
+    width: 25px;
+    margin-left: 100px;
+  }
+  .floatLeft {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    font-size: 10px;
+    padding: 15px 0px;
+  }
+  .left {
+    float: left;
+    width: 25%;
+  }
+  .mainImg {
+    margin: 0px auto;
+  }
+  .mainImg img {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    display: block;
+    width: 350px;
+  }
+  
+  .colum1 {
+    width: 50%;
+    float: left;
+    text-align: center;
+  }
+  
+  .colum2 {
+    width: 50%;
+    float: left;
+    text-align: center;
+  }
+  .clear {
+    clear: both;
+  }
+  .floatLeft {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    font-size: 10px;
+    padding: 15px 0px;
+  }
+  .copyright {
+    text-align: center;
+    background-color: rgba(81, 67, 84, 255);
+    color: white;
+    margin: 0;
+    padding: 15px;
+    font-size: 5px;
+  }
+  
+  .image1 {
+    background-image: url("./images/tablet.png");
+  }
+  .image2 {
+    background-image: url("./images/macbook.png");
+  }
+  .image3 {
+    background-image: url("./images/iphoneX.png");
+  }
+  .deviceImg {
+    padding: 135px 200px;
+    background-color: rgba(183, 206, 214, 255);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .socials {
+    text-align: center;
+    padding: 50px;
+  }
+  .socials i {
+    color: white;
+    padding-right: 50px;
+    font-size: 15px;
+  }
+  
+  .fontawesome {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .fontawesome i {
+    color: black;
+    padding: 10px;
+    font-size: 50px;
+  }
+  .fontawesome div {
+    padding: 15px;
+  }
+  .textContainer {
+    padding: 30px;
+  }
+  .textContainer p {
+    text-align: justify;
+    text-indent: 25px;
+  }
+  .floatLeft h2{
+      color: black;
+      font-family:'Times New Roman', Times, serif;
+      font-size: 20px;
+  }
+  .about{
+    padding-bottom: 30px;
+  }
+  .left span{
+    font-weight: bold;
+  }
