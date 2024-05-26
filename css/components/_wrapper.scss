@@ -1,0 +1,38 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+body{
+    overflow: hidden;
+    height: 100vh;
+    @include mix.tablet-styles{
+        height: max-content;
+        overflow: auto;
+    }
+}
+.wrapper {
+    display: flex;
+    height: 100vh;
+    
+    header{
+      flex-basis: 20%;
+      
+    }
+    main{
+      flex-basis: 80%;
+      overflow: auto;
+    }
+     @include mix.tablet-styles{
+        
+            
+            display: block;
+            
+            
+            
+        header{
+            flex-basis: auto;
+        }
+        
+         }   
+           
+     }
+  
+

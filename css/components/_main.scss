@@ -1,0 +1,63 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var.$background-color-secondary;
+  .container-box {
+    text-decoration: none;
+    color: var.$text-color-base;
+    flex-basis: 33.33%;
+    position: relative;
+    background-color: var.$background-color-base;
+    
+    div{
+      height: 100%;
+      
+      img{
+        height: 100%;
+        opacity: 1;
+        transition: opacity .5s ease-in-out;
+      }
+    }
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      border-top: 1px solid var.$text-color-base;
+      border-bottom: 1px solid var.$text-color-base;
+      padding: 10px 0;
+      text-align: center;
+      width: 60%;
+      transition: opacity .3s ease-in-out;
+      
+    }
+    
+    &:hover {
+      img {
+        opacity: 0;
+        
+      }
+      p {
+        opacity: 1;
+        
+      }
+    }
+  }
+  @include mix.tablet-styles {
+    .container-box {
+      flex-basis: 50%;
+      
+      font-size: var.$font-size-small;
+      
+    }
+  }
+  @include mix.mobile-l-styles {
+    .container-box {
+      flex-basis: 100%;
+    }
+  }
+}

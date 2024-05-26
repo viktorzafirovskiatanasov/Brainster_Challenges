@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.9375rem;
+  font-weight: 700;
+}
+
+header div {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+@media (max-width: 768px) {
+  header div {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+}
+
+header div {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  header div {
+    width: 100%;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+header .logo {
+  align-items: center;
+}
+header .logo i {
+  display: none;
+  border: 1px solid #000;
+  padding: 5px;
+}
+header .logo i:hover {
+  cursor: pointer;
+}
+header ul {
+  list-style-type: none;
+  padding: 0px;
+}
+header ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+header ul li {
+  text-transform: capitalize;
+}
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+header ul li:hover {
+  text-decoration: underline;
+}
+header .copyright a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+header .copyright a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  header .logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .logo i {
+    display: block;
+  }
+  header .menu {
+    display: none;
+  }
+  header .copyright {
+    display: none;
+  }
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  body {
+    height: -moz-max-content;
+    height: max-content;
+    overflow: auto;
+  }
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+.wrapper header {
+  flex-basis: 20%;
+}
+.wrapper main {
+  flex-basis: 80%;
+  overflow: auto;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    display: block;
+  }
+  .wrapper header {
+    flex-basis: auto;
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(174, 174, 174, 0.67);
+}
+main .container-box {
+  text-decoration: none;
+  color: #000;
+  flex-basis: 33.33%;
+  position: relative;
+  background-color: #FFF;
+}
+main .container-box div {
+  height: 100%;
+}
+main .container-box div img {
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+main .container-box p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+  text-align: center;
+  width: 60%;
+  transition: opacity 0.3s ease-in-out;
+}
+main .container-box:hover img {
+  opacity: 0;
+}
+main .container-box:hover p {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  main .container-box {
+    flex-basis: 50%;
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 425px) {
+  main .container-box {
+    flex-basis: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
