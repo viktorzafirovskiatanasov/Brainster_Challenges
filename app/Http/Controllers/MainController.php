@@ -128,5 +128,8 @@ class MainController extends Controller
     return redirect()->back()->with('success', 'Email sent successfully');
 }
 
+    
+
+
 
 }
