@@ -1,0 +1,12 @@
+Step-1: Open repository on GitLab
+Step-2: Copy the HTTPS link
+Step-3: Create an empty folder on your desktop
+Step-4: open git bash on the folder
+Step-5: write the commant "git clone  HTTPS link ."
+Step-6: open VSCode with command "code ."
+Step-7: switch to a new brach from the main branch with "git checkout -b "branch name" "
+Step-8: add all the folders you need to the VSCode
+Step-9: after adding them you need to use "git add ." and "git commit -m " " "
+Step-10: push the branch to the repo with "git push origin "branch name""
+Step-11: switch to the main branch 
+Step-12: repeat steps 7 to 11 until you have added all of the previous challenges
