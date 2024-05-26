@@ -1,0 +1,79 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+body {
+  font-family: var.$font-family-base;
+  font-weight: var.$font-weight-normal;
+  line-height: var.$line-height-base;
+  color: var.$text-color-base;
+}
+p{
+  color: var.$text-color-secondary;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: math.div(var.$gutter-base, 2);
+  font-weight: var.$font-weight-bold;
+  font-size: var.$font-size-bigger;
+}
+h1{
+  text-transform: uppercase;
+}
+h2 , h3{
+  text-transform: capitalize;
+  color: var.$text-color-secondary;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  text-transform: capitalize;
+  :not(:last-child){
+    margin-right: math.div(var.$gutter-base,3);
+  }
+}
+hr{
+  width: 20%;
+  height: math.div(var.$gutter-base,10);
+  background-color: var.$background-color-tertiary;
+
+  @include mix.mobile-l-styles{
+    width: 70%;
+  }
+}
+.wrapper{
+  @extend %wrap;
+  @extend %section;
+}
+
+.section-header{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: var.$gutter-base*2;
+  @include mix.tablet-styles{
+    width: 80%;
+  }
+}
+.bg-img{
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.btn{
+  background-color: var.$background-color-tertiary;
+  color: var.$text-color-primary;
+  text-transform: uppercase;
+  display: inline-block;
+  border: none;
+  font-weight: var.$font-weight-bold;
+  border-radius: math.div(var.$gutter-base,6);
+  padding: math.div(var.$gutter-base,3) var.$gutter-base;
+}

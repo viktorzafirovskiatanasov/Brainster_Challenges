@@ -1,0 +1,43 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/hero.jpg);
+
+  background-attachment: fixed;
+  padding-top: math.div(var.$gutter-base, 2);
+  nav {
+    @extend %flex-mobile-responsive;
+    height: 5%;
+    @extend %wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p{
+    color: var.$text-color-primary;
+  }
+  .hero {
+    height: 95%;
+    @extend %wrap;
+    @extend %flex-tablet-responsive;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var.$text-color-primary;
+  }
+  @include mix.mobile-l-styles {
+    .logo{
+      p{
+        font-size: var.$font-size-bigger ;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}

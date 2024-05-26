@@ -1,0 +1,35 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as var;
+@use 'sass:math';
+
+
+.services{
+    background-color: var.$background-color-secondary;
+    .inner{
+        @extend %flex-tablet-responsive;
+    }
+    .box{
+        @extend %flex-basis-33;
+        text-align: center;
+        &:not(:last-child){
+            margin-right: var.$gutter-base;
+        }
+        i {
+            color: var.$background-color-tertiary;
+            margin-bottom: math.div(var.$gutter-base,2);
+        }
+    }
+    @include mix.tablet-styles{
+        .box:not(:last-child){
+            margin: 0;
+            margin-bottom: math.div(var.$gutter-base,2);
+        }
+        
+            .box-content{
+                width: 70%;
+                margin: 0 auto;
+            }
+        
+    }
+   
+}
